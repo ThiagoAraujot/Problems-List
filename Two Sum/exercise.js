@@ -26,13 +26,13 @@ Output: [0,1]
 
 */
 
-var TwoSum = function(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = 1; j < nums.length ; j++) {
-            const sum = nums[i] + nums[i + j]
-            if (sum === target) {
-                return [i, i + j]
-            }
-        }
+var TwoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 1; j < nums.length; j++) {
+      const sum = nums[i] + nums[i + j];
+      if (sum === target) {
+        return [i, i + j];
+      }
     }
+  }
 };
