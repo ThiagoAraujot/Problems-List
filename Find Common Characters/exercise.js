@@ -22,7 +22,7 @@ var commonChars = function (words) {
   for (const letter of firstWordArr) {
     if (words.every((word) => word.includes(letter))) {
       result.push(letter);
-      words = words.map((word) => word.replace(letter, ""));
+      words = words.map((word) => word.replace(letter, ''));
     }
   }
 
