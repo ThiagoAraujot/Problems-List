@@ -26,6 +26,6 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
 var isPalindrome = function (x) {
-  let reverseNum = x.toString().split('').reverse().join("");
+  let reverseNum = x.toString().split('').reverse().join('');
   return x.toString() === reverseNum;
 };
